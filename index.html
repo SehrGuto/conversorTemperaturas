@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperaturas</title>
+    
+</head>
+<body>
+    <!--Titulo de mi programita-->
+    <h2>Conversor de Temperaturas</h2>
+
+    <!--Formulario para recibir la información-->
+    <form id="temperatureForm">
+        <label for="temperature">Temperatura:</label>
+        <input type="number" id="temperature" name="temperature" required>
+
+        <label for="unit">Unidad:</label>
+        <select id="unit" name="unit" required>
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+        </select>
+
+        <!--Boton para convertir y agregar el resultado abajo-->
+        <button type="button" onclick="convertTemperature()">Convertir</button>
+    </form>
+
+    <!--div del resultado-->
+    <div id="result"></div>
+
+    <script src="script.js"></script>   
+</body>
+</html>
